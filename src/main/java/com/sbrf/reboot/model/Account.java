@@ -2,7 +2,7 @@ package com.sbrf.reboot.model;
 
 import lombok.Data;
 
-@Data()
+@Data
 public class Account {
 
     private final String id;
