@@ -1,14 +1,29 @@
 # Java Developer School Home Work Project
 
-* [home work #2](#hw2)
+Home works
 
-* [home work #3](#hw3)
+* [#2 - HelloWorld](#hw1)
+* [#2 - Calculator](#hw2)
+* [#3 - Repository](#hw3)
+* [#4 - Repository Implementation](#hw4)
+
+---
+
+## <a name="hw1"></a> home work #1
+
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
 
 ---
 
 ## <a name="hw2"></a> home work #2
 
-[GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/tree/lesson-2)
+Branch : [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/tree/lesson-2)
+
+Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-2.)
 
 * Написать класс с методами
     * сложение
@@ -49,9 +64,10 @@
 7. Сделать commit и push
 8. Сделать pull request вашей новой ветки в ветку develop
 
+---
 ## <a name="hw3"></a> home work #3
 
-Code: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/tree/lesson-3)
+Branch: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/tree/lesson-3)
 
 Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-3.)
 
@@ -68,3 +84,33 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/
 1. Создать свою ветку от ветки develop.
 2. Сделать pull из ветки lesson-3 (Появится готовый класс с тестом AccountServiceTest).
 3. Выполнить домашнее задание.
+
+---
+
+## <a name="hw4"></a> home work #4
+
+Branch: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/home-work/tree/lesson-4)
+
+Wiki: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-4.)
+
+### ТЗ
+
+* Создать класс AccountRepositoryImpl реализующий интерфейс AccountRepository с прошлого урока.
+* Единственный метод для реализации getAllAccountsByClientId.
+
+**Реализовать метод getAllAccountsByClientId по следующим требованиям:**
+
+1. _Прочитать файл Accounts.txt используя InputStream и BufferedReader (возможны варианты)._
+2. _Распарсить полученные строки(любым способом на ваш выбор, можно стандартными методами класса String)._
+3. _Создать Set на основе данных из файла, где value = number из файла исключительно для clientId переданного на вход._
+
+### Задание на 5+
+
+1. Добавить в репозиторий метод обновления номера счета с входными параметрами id клиента и номер счета(который нужно
+   обновить) в файле.
+2. Заменить в прочитанном файле любой номер счета у клиента.
+
+### В приложении:
+
+* _Для чтения\записи файлов использовать классы из Java I/O_
+* _Для обработки текста использовать класс или классы для работы со строками из JDK т.е. не использовать сторонние либы_
