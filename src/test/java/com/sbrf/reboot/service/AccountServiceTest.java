@@ -1,5 +1,6 @@
 package com.sbrf.reboot.service;
 
+import com.sbrf.reboot.exception.AccountException;
 import com.sbrf.reboot.model.Account;
 import com.sbrf.reboot.repository.AccountRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -27,7 +28,7 @@ class AccountServiceTest {
     }
 
     @Test
-    void bookExist() {
+    void bookExist() throws AccountException {
         Account account = new Account("ACC1234NUM");
         Set<Account> accounts = new HashSet<>();
         accounts.add(account);
@@ -38,7 +39,7 @@ class AccountServiceTest {
     }
 
     @Test
-    void bookNotExist() {
+    void bookNotExist() throws AccountException {
         Set<Account> accounts = new HashSet<>();
         accounts.add(new Account("ACC1234NUM"));
 
