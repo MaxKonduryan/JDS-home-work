@@ -2,14 +2,14 @@
 
 Home works
 
-* [#2 - HelloWorld](#hw1)
-* [#2 - Calculator](#hw2)
-* [#3 - Repository](#hw3)
-* [#4 - Repository - File Implementation](#hw4)
+* [#1 - HelloWorld](#home-work-1)
+* [#2 - Calculator](#home-work-2)
+* [#3 - Repository](#home-work-3)
+* [#4 - Repository - File Implementation](#home-work-4)
 
 ---
 
-## <a name="hw1"></a> home work #1
+## home work #1
 
     public class HelloWorld {
         public static void main(String[] args) {
@@ -19,11 +19,11 @@ Home works
 
 ---
 
-## <a name="hw2"></a> home work #2
+## home work #2
 
 Branch : [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/tree/lesson-2)
 
-Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-2.)
+Wiki: [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-2.)
 
 * Написать класс с методами
     * сложение
@@ -65,7 +65,8 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/
 8. Сделать pull request вашей новой ветки в ветку develop
 
 ---
-## <a name="hw3"></a> home work #3
+
+## home work #3
 
 Branch: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/tree/lesson-3)
 
@@ -87,7 +88,7 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/
 
 ---
 
-## <a name="hw4"></a> home work #4
+## home work #4
 
 Branch: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/home-work/tree/lesson-4)
 
