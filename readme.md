@@ -7,13 +7,14 @@ Home works
 * [#3 - Repository](#home-work-3)
 * [#4 - Repository - File Implementation](#home-work-4)
 * [#5 - Banknote & Cassette](#home-work-5)
+* [#6 + 7 - AccountUtils : sortedById, sortedByIdDate](#home-work-6-and-7)
 
 ---
 
 ## home work #1
 
-    public class HelloWorld {
-        public static void main(String[] args) {
+    public cla*ss HelloWorld {
+        public stat*ic void main(String[] args) {
             System.out.println("Hello, World!");
         }
     }
@@ -121,6 +122,10 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/
 
 ## home work #5
 
+Branch: [GitHub - RodinDenis/home-work at lesson-5](https://github.com/RodinDenis/home-work/tree/lesson-5)
+
+Wiki: [GitHub - RodinDenis/home-work at lesson-5](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-5.)
+
 ТЗ.
 
 _В нижней части банкомата размещается сейф, в котором имеется несколько кассет для хранения денежных купюр. В одной
@@ -130,3 +135,26 @@ _В нижней части банкомата размещается сейф, 
 1. Создать класс `Banknote`, определяющий нашу сущность - купюра.
 2. Создать класс `Cassette`, определяющий нашу сущность - кассета в банкомате. (Использовать Generics).
 3. Добиться успешного выполнения теста `CassetteTest`.
+
+---
+
+## home work #6 and #7
+
+Branch: [GitHub - RodinDenis/home-work at lesson-7](https://github.com/RodinDenis/home-work/tree/lesson-7)
+
+Wiki: [GitHub - RodinDenis/home-work at lesson-7](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-7.)
+
+_Реализовать утилиту сортировки коллекций со счетами._
+
+Создать класс `AccountUtils` с двумя методами.
+
+* `sortedById` - метод сортирует коллекцию со счетами по полю `id`(id счета).
+
+* `sortedByIdDate` - метод сортирует коллекцию со счетами по полям `id`(id счета) и `createDate`(дата создания счета).
+  При чем, порядок создания - от более старых к более новым.
+
+Дополнительное задание.
+
+* Реализовать метод сортировки по трем полям: `id`(id счета) и `createDate`(дата создания счета) и `balance`(баланс
+  счёта).
+* Написать к нему тест.
