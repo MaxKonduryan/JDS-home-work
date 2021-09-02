@@ -1,10 +1,10 @@
 # Java Developer School Home Work Project
 
-![size](https://img.shields.io/github/repo-size/MaxKonduryan/JDS-home-work)
-![lgs](https://img.shields.io/github/languages/top/MaxKonduryan/JDS-home-work)
-![java](https://img.shields.io/badge/java-1.8-blue.svg)
-![opr](https://img.shields.io/github/issues-pr-raw/MaxKonduryan/JDS-home-work)
-![cpr](https://img.shields.io/github/issues-pr-closed-raw/MaxKonduryan/JDS-home-work?color=green)
+[![size](https://img.shields.io/github/repo-size/MaxKonduryan/JDS-home-work)](https://github.com/MaxKonduryan/JDS-home-work)
+[![lgs](https://img.shields.io/github/languages/top/MaxKonduryan/JDS-home-work)](https://github.com/MaxKonduryan/JDS-home-work)
+[![java](https://img.shields.io/badge/java-1.8-blue.svg)](https://github.com/MaxKonduryan/JDS-home-work)
+[![opr](https://img.shields.io/github/issues-pr-raw/MaxKonduryan/JDS-home-work)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
+[![cpr](https://img.shields.io/github/issues-pr-closed-raw/MaxKonduryan/JDS-home-work?color=green)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
 
 * [#1 - HelloWorld](#home-work-1)
 * [#2 - Calculator](#home-work-2)
