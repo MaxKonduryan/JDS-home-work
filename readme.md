@@ -3,8 +3,8 @@
 [![size](https://img.shields.io/github/repo-size/MaxKonduryan/JDS-home-work)](https://github.com/MaxKonduryan/JDS-home-work)
 [![lgs](https://img.shields.io/github/languages/top/MaxKonduryan/JDS-home-work)](https://github.com/MaxKonduryan/JDS-home-work)
 [![java](https://img.shields.io/badge/java-1.8-blue.svg)](https://github.com/MaxKonduryan/JDS-home-work)
-[![opr](https://img.shields.io/github/issues-pr-raw/MaxKonduryan/JDS-home-work)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
-[![cpr](https://img.shields.io/github/issues-pr-closed-raw/MaxKonduryan/JDS-home-work?color=green)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
+[![opr](https://img.shields.io/github/issues-pr-raw/MaxKonduryan/JDS-home-work?color=red)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
+[![cpr](https://img.shields.io/github/issues-pr-closed-raw/MaxKonduryan/JDS-home-work?color=blue)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
 
 * [#1 - HelloWorld](#home-work-1)
 * [#2 - Calculator](#home-work-2)
@@ -12,6 +12,7 @@
 * [#4 - Repository - File Implementation](#home-work-4)
 * [#5 - Banknote & Cassette](#home-work-5)
 * [#6 + 7 - AccountUtils : sortedById, sortedByIdDate](#home-work-6-and-7)
+* [#8 + 9 - JSON/XML Serialization](#home-work-8-and-9)
 
 ---
 
@@ -27,8 +28,7 @@ public class HelloWorld {
 
 ## home work #2
 
-Branch : [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/tree/lesson-2)
-
+Branch : [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/tree/lesson-2) \
 Wiki: [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-2.)
 
 * Написать класс с методами
@@ -74,8 +74,7 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-2](https://github.com/RodinDenis/
 
 ## home work #3
 
-Branch: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/tree/lesson-3)
-
+Branch: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/tree/lesson-3) \
 Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-3.)
 
 ### Задание
@@ -96,8 +95,7 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-3](https://github.com/RodinDenis/
 
 ## home work #4
 
-Branch: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/home-work/tree/lesson-4)
-
+Branch: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/home-work/tree/lesson-4) \
 Wiki: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-4.)
 
 ### ТЗ
@@ -126,8 +124,7 @@ Wiki: [GitHub - RodinDenis/home-work at lesson-4](https://github.com/RodinDenis/
 
 ## home work #5
 
-Branch: [GitHub - RodinDenis/home-work at lesson-5](https://github.com/RodinDenis/home-work/tree/lesson-5)
-
+Branch: [GitHub - RodinDenis/home-work at lesson-5](https://github.com/RodinDenis/home-work/tree/lesson-5) \
 Wiki: [GitHub - RodinDenis/home-work at lesson-5](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-5.)
 
 ТЗ.
@@ -144,8 +141,7 @@ _В нижней части банкомата размещается сейф, 
 
 ## home work #6 and #7
 
-Branch: [GitHub - RodinDenis/home-work at lesson-7](https://github.com/RodinDenis/home-work/tree/lesson-7)
-
+Branch: [GitHub - RodinDenis/home-work at lesson-7](https://github.com/RodinDenis/home-work/tree/lesson-7) \
 Wiki: [GitHub - RodinDenis/home-work at lesson-7](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-7.)
 
 _Реализовать утилиту сортировки коллекций со счетами._
@@ -162,3 +158,12 @@ _Реализовать утилиту сортировки коллекций �
 * Реализовать метод сортировки по трем полям: `id`(id счета) и `createDate`(дата создания счета) и `balance`(баланс
   счёта).
 * Написать к нему тест.
+
+---
+
+## home work #8 and #9
+
+Branch: [GitHub - RodinDenis/home-work at lesson-9](https://github.com/RodinDenis/home-work/tree/lesson-9) \
+Wiki: [GitHub - RodinDenis/home-work at lesson-9](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-9.)
+
+_Реализовать утилиту сериализации и десериализации в json\xml классов, передаваемых между банкоматом и хостом._
