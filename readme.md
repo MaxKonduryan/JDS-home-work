@@ -5,6 +5,7 @@
 [![java](https://img.shields.io/badge/java-1.8-blue.svg)](https://github.com/MaxKonduryan/JDS-home-work)
 [![opr](https://img.shields.io/github/issues-pr-raw/MaxKonduryan/JDS-home-work?color=red)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
 [![cpr](https://img.shields.io/github/issues-pr-closed-raw/MaxKonduryan/JDS-home-work?color=blue)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
+[![cpr](https://img.shields.io/github/checks-status/MaxKonduryan/JDS-home-work/dev?color=blue)](https://github.com/MaxKonduryan/JDS-home-work/pulls)
 
 * [#1 - HelloWorld](#home-work-1)
 * [#2 - Calculator](#home-work-2)
@@ -13,6 +14,7 @@
 * [#5 - Banknote & Cassette](#home-work-5)
 * [#6 + 7 - AccountUtils : sortedById, sortedByIdDate](#home-work-6-and-7)
 * [#8 + 9 - JSON/XML Serialization](#home-work-8-and-9)
+* [#10 + 11 - AccountService : getMaxAccountBalance, getAllAccountsByDateMoreThen](#home-work-10-and-11)
 
 ---
 
@@ -167,3 +169,20 @@ Branch: [GitHub - RodinDenis/home-work at lesson-9](https://github.com/RodinDeni
 Wiki: [GitHub - RodinDenis/home-work at lesson-9](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-9.)
 
 _Реализовать утилиту сериализации и десериализации в json\xml классов, передаваемых между банкоматом и хостом._
+
+---
+
+## home work #10 and #11
+
+Branch: [GitHub - RodinDenis/home-work at lesson-11](https://github.com/RodinDenis/home-work/tree/lesson-11) \
+Wiki: [GitHub - RodinDenis/home-work at lesson-11](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-11.)
+
+_С помощью Stream API реализуйте новые методы класса `AccountService`._
+
+* `getMaxAccountBalance` - метод возвращает счёт с максимальным балансом.
+* `getAllAccountsByDateMoreThen` - метод возвращает счета с более поздними датами создания, чем указано во входных
+  параметрах.
+
+Дополнительное задание на 5+
+
+* Придумать собственный метод для работы со счетами используя Stream API. Написать к нему тест.
