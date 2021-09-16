@@ -85,4 +85,36 @@ class AccountServiceTest {
         assertEquals(2, allAccountsByDateMoreThen.size());
         assertTrue(allAccountsByDateMoreThen.contains(account3));
     }
+
+    @Test
+    void getAllAccountsWithOverdraftMoreThen() throws AccountException {
+        Account account1 = Account.builder().clientId(1L).balance(new BigDecimal("1.23")).build();
+        Account account2 = Account.builder().clientId(1L).balance(new BigDecimal("45.67")).build();
+        Account account3 = Account.builder().clientId(1L).balance(new BigDecimal("8.9")).build();
+        Account account4 = Account.builder().clientId(1L).balance(new BigDecimal("0.12")).build();
+        Account account5 = Account.builder().clientId(1L).balance(new BigDecimal("-1.23")).build();
+        Account account6 = Account.builder().clientId(1L).balance(new BigDecimal("-45.67")).build();
+        Account account7 = Account.builder().clientId(1L).balance(new BigDecimal("-8.9")).build();
+        Account account8 = Account.builder().clientId(1L).balance(new BigDecimal("-0.12")).build();
+
+        Set<Account> accounts = new HashSet<Account>() {{
+            add(account1);
+            add(account2);
+            add(account3);
+            add(account4);
+            add(account5);
+            add(account6);
+            add(account7);
+            add(account8);
+        }};
+
+        Set<Account> result = new HashSet<Account>() {{
+            add(account6);
+            add(account7);
+        }};
+
+        when(accountRepository.getAllAccountsByClientId(1L)).thenReturn(accounts);
+
+        assertEquals(result, accountService.getAllAccountsWithOverdraftMoreThen(1L, new BigDecimal("1.23")));
+    }
 }
