@@ -12,9 +12,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 class AccountServiceTest {
@@ -54,7 +52,7 @@ class AccountServiceTest {
     @Test
     void getMaxAccountBalance() throws AccountException {
         Account accountWithMaxBalance = Account.builder().clientId(1L).id(4L).balance(new BigDecimal(150000)).build();
-        Set<Account> accounts = new HashSet() {{
+        Set<Account> accounts = new HashSet<Account>() {{
             add(Account.builder().clientId(1L).id(1L).balance(BigDecimal.TEN).build());
             add(Account.builder().clientId(1L).id(2L).balance(new BigDecimal(200)).build());
             add(Account.builder().clientId(1L).id(3L).balance(new BigDecimal("1.65")).build());
@@ -68,20 +66,12 @@ class AccountServiceTest {
 
     @Test
     void getAllAccountsByDateMoreThen() throws AccountException {
-        Account account1 = Account.builder().clientId(1L)
-                .createDate(LocalDate.now().minusDays(2))
-                .build();
-        Account account2 = Account.builder().clientId(1L)
-                .createDate(LocalDate.now().minusDays(3))
-                .build();
-        Account account3 = Account.builder().clientId(1L)
-                .createDate(LocalDate.now().minusDays(1))
-                .build();
-        Account account4 = Account.builder().clientId(1L)
-                .createDate(LocalDate.now().minusDays(7))
-                .build();
+        Account account1 = Account.builder().clientId(1L).createDate(LocalDate.now().minusDays(2)).build();
+        Account account2 = Account.builder().clientId(1L).createDate(LocalDate.now().minusDays(3)).build();
+        Account account3 = Account.builder().clientId(1L).createDate(LocalDate.now().minusDays(1)).build();
+        Account account4 = Account.builder().clientId(1L).createDate(LocalDate.now().minusDays(7)).build();
 
-        Set<Account> accounts = new HashSet() {{
+        Set<Account> accounts = new HashSet<Account>() {{
             add(account1);
             add(account2);
             add(account3);
@@ -90,7 +80,7 @@ class AccountServiceTest {
 
         when(accountRepository.getAllAccountsByClientId(1L)).thenReturn(accounts);
 
-        Set allAccountsByDateMoreThen = accountService.getAllAccountsByDateMoreThen(1L, LocalDate.now().minusDays(2));
+        Set<Account> allAccountsByDateMoreThen = accountService.getAllAccountsByDateMoreThen(1L, LocalDate.now().minusDays(2));
 
         assertEquals(2, allAccountsByDateMoreThen.size());
         assertTrue(allAccountsByDateMoreThen.contains(account3));

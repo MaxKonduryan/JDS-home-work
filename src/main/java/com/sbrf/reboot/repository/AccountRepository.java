@@ -1,7 +1,7 @@
 package com.sbrf.reboot.repository;
 
 import com.sbrf.reboot.exception.AccountException;
-import com.sbrf.reboot.model.Account;
+import com.sbrf.reboot.dto.Account;
 
 import java.util.Set;
 
