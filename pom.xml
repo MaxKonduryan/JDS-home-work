@@ -28,17 +28,38 @@
             https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#bill-of-materials-bom-poms
         -->
         <lombok.version>1.18.20</lombok.version>
-        <junit-jupiter.version>5.7.2</junit-jupiter.version>
-        <mockito-core.version>3.11.2</mockito-core.version>
+        <junit-jupiter.version>5.8.0</junit-jupiter.version>
+        <mockito-core.version>3.12.4</mockito-core.version>
 
-        <jackson-databind.version>2.12.4</jackson-databind.version>
-        <jackson-dataformat-xml.version>2.11.1</jackson-dataformat-xml.version>
+        <jackson-databind.version>2.12.5</jackson-databind.version>
+        <jackson-dataformat-xml.version>2.12.5</jackson-dataformat-xml.version>
 
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
 
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>2020.0.11</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
