@@ -190,7 +190,7 @@ _С помощью Stream API реализуйте новые методы кл�
 
 ## home work #12 and #13 and #14
 
-Branch: [GitHub - RodinDenis/home-work at lesson-14](https://github.com/RodinDenis/home-work/tree/lesson-14) \
+Wiki: [GitHub - RodinDenis/home-work at lesson-14](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-14.)
 
 _Создайте классы:_
 
