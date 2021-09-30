@@ -20,4 +20,5 @@ public class Account {
     private long clientId;
     private LocalDate createDate;
     private BigDecimal balance;
+    private String currency;
 }
