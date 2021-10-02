@@ -16,6 +16,7 @@
 * [#8 + 9 - JSON/XML Serialization](#home-work-8-and-9)
 * [#10 + 11 - AccountService : getMaxAccountBalance, getAllAccountsByDateMoreThen](#home-work-10-and-11)
 * [#12 + 13 + 14 - MainReport : getTotalsWithCompletableFuture, getTotalsWithReact](#home-work-12-and-13-and-14)
+* [#15 - Hello Counter](#home-work-15)
 
 ---
 
@@ -208,3 +209,19 @@ _Создайте классы:_
 _Создайте класс `MainReport` с методом `getTotalsWithCompletableFuture` и `getTotalsWithReact`, который получает на вход Stream и возвращает сумму балансов рублевых счетов открытых между 01.07.2021 и 01.08.2021 и принадлежащих клиентам в возрасте между 18 и 30._
 
 _Решение задачи должно использовать максимально доступное количество ядер процессора._
+
+## home work #15
+
+Wiki: [GitHub - RodinDenis/home-work at lesson-15](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-15.)
+
+_Напишите сервлет, который по запросу из браузера (HTTP GET запрос) будет_
+
+1. принимать один параметр `name`. Параметр будет передаваться в адресной строке. \
+   Например: http://127.0.0.1:8080/someApp/ask?name=myName
+2. в ответ будет возвращать строку "Привет, " + значение переменной `name`
+3. у сервлета должно быть поле `counter` со стартовым значением 0. В нем должен происходить инкремент при каждом HTTP GET запросе. Значение каунтера также должно возвращаться после текста приветствия. \
+   Например: Counter = 5
+
+_Необходимо подобрать такой тип для поля counter чтобы обеспечить для него потокобезопасность._
+
+_Для проверки сервлет можно деплоить в сервер приложений [Tomcat](http://tomcat.apache.org/) или любой другой, который вам понравится._

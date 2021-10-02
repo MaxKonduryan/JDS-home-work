@@ -1,10 +1,7 @@
 package com.sbrf.reboot.model;
 
 import com.sbrf.reboot.dto.Account;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.util.Set;
 
