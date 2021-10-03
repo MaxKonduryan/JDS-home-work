@@ -17,6 +17,7 @@
 * [#10 + 11 - AccountService : getMaxAccountBalance, getAllAccountsByDateMoreThen](#home-work-10-and-11)
 * [#12 + 13 + 14 - MainReport : getTotalsWithCompletableFuture, getTotalsWithReact](#home-work-12-and-13-and-14)
 * [#15 - Hello Counter](#home-work-15)
+* [#16 - Context](#home-work-16)
 
 ---
 
@@ -191,7 +192,7 @@ _С помощью Stream API реализуйте новые методы кл�
 
 ## home work #12 and #13 and #14
 
-Wiki: [GitHub - RodinDenis/home-work at lesson-14](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-14.)
+Wiki: [GitHub - RodinDenis/home-work at lesson-14](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-14)
 
 _Создайте классы:_
 
@@ -212,7 +213,7 @@ _Решение задачи должно использовать максим�
 
 ## home work #15
 
-Wiki: [GitHub - RodinDenis/home-work at lesson-15](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-15.)
+Wiki: [GitHub - RodinDenis/home-work at lesson-15](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-15)
 
 _Напишите сервлет, который по запросу из браузера (HTTP GET запрос) будет_
 
@@ -225,3 +226,14 @@ _Напишите сервлет, который по запросу из бра
 _Необходимо подобрать такой тип для поля counter чтобы обеспечить для него потокобезопасность._
 
 _Для проверки сервлет можно деплоить в сервер приложений [Tomcat](http://tomcat.apache.org/) или любой другой, который вам понравится._
+
+## home work #16
+
+Wiki: [GitHub - RodinDenis/home-work at lesson-16](https://github.com/RodinDenis/home-work/wiki/%D0%A3%D1%80%D0%BE%D0%BA-16)
+
+_Ознакомьтесь с примером консольного приложения [SpringConsoleApp](https://github.com/RodinDenis/SpringConsoleApp)_
+
+1. Объявите классы `Client` и `Account` Spring бинами
+2. добавьте возможность инициализации этих бинов через аннотации и xml (необходимо будет явно создавать контекст)
+
+_В реальных приложениях создание контекста скрыто "по капотом". В этом примере нужно понять как работает ядро Spring_
