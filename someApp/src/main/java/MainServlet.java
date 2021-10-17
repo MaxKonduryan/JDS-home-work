@@ -1,7 +1,7 @@
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,7 +17,7 @@ public class MainServlet extends HttpServlet {
         String name = req.getParameter("name");
         resp.setContentType("text/html");
         PrintWriter printWriter = resp.getWriter();
-        printWriter.write("Привет" + ((name == null) ? "" : ", " + name) + "!<br>");
+        printWriter.write("Hello" + ((name == null) ? "" : ", " + name) + "!<br>");
         printWriter.write("Counter = " + counter.incrementAndGet());
         printWriter.close();
     }
